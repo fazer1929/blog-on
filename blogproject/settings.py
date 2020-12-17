@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '4hs)@6lmo4na&irhyd1q8yhdiqr*rr=+-v&g*$j(m-t059_wj9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = True #os.environ.get('DJANGO_DEBUG')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['blog-on-fazer.herokuapp.com']
 
 
 # Application definition
